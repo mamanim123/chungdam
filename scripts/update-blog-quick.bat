@@ -54,13 +54,13 @@ if %errorlevel% equ 0 (
     echo 📋 다음 단계:
     echo    🌐 index.html을 브라우저에서 확인
     echo    📤 변경사항 업로드: sync-and-update.bat 실행
-    echo    📁 생성된 이미지: images\blog-post-*-auto.png
+    echo    📁 생성된 이미지: images\*.png (블로그 ID 기반)
     echo.
     
-    REM 생성된 이미지 파일 개수 표시
-    for /f %%i in ('dir /b images\blog-post-*-auto.png 2^>nul ^| find /c /v ""') do set count=%%i
+    REM 생성된 블로그 이미지 파일 개수 표시
+    for /f %%i in ('dir /b images\223*.png 2^>nul ^| find /c /v ""') do set count=%%i
     if defined count (
-        echo 📊 현재 이미지 파일 개수: %count%개
+        echo 📊 현재 블로그 이미지 파일 개수: %count%개
     )
     echo.
 ) else (

@@ -122,9 +122,9 @@ echo    - GitHub: https://github.com/mamanim123/chungdam
 echo    - 로컬: index.html 파일을 브라우저에서 열기
 echo.
 echo 📊 처리 결과:
-for /f %%i in ('dir /b images\blog-post-*-auto.png 2^>nul ^| find /c /v ""') do set count=%%i
+for /f %%i in ('dir /b images\223*.png 2^>nul ^| find /c /v ""') do set count=%%i
 if defined count (
-    echo    - 현재 이미지 파일: %count%개
+    echo    - 현재 블로그 이미지 파일: %count%개 (블로그 ID 기반)
 )
 echo    - 업데이트 시간: %timestamp%
 echo.
