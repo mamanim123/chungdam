@@ -198,9 +198,9 @@ scripts/update-blog-quick.bat          (빠른 확인)
 📋 다음 단계:
    🌐 index.html을 브라우저에서 확인
    📤 변경사항 업로드: sync-and-update.bat 실행
-   📁 생성된 이미지: images\blog-post-*-auto.png
+   📁 생성된 이미지: images\*.png (블로그 ID 기반)
 
-📊 현재 이미지 파일 개수: 15개
+📊 현재 블로그 이미지 파일 개수: 5개
 ```
 
 ### **새로운 글이 없는 경우**

@@ -35,7 +35,7 @@ node update-blog-efficient.js
 
 ### ⚡ **효율적 처리 시스템**
 4. **📸 필요한 만큼만 이미지 생성**: 새 글 1개면 1개만, 2개면 2개만
-5. **🔢 순차적 파일명 할당**: 중복 없는 고유 번호 (1,2,3...N)
+5. **🆔 블로그 ID 기반 파일명**: 223928716039.png 형식으로 명확한 식별
 6. **💾 기존 파일 완전 보존**: 덮어쓰기 없이 안전하게 누적
 
 ### 🖥️ **자동 웹사이트 업데이트**
@@ -49,10 +49,13 @@ node update-blog-efficient.js
 
 ## 📁 생성되는 파일들
 
-- `images/blog-post-1-auto.png` - 첫 번째 글 이미지
-- `images/blog-post-2-auto.png` - 두 번째 글 이미지  
-- `images/blog-post-3-auto.png` - 세 번째 글 이미지
+- `images/223928716039.png` - 블로그 ID 기반 이미지 (요리 체험 활동)
+- `images/223920577668.png` - 블로그 ID 기반 이미지 (생신 잔치)  
+- `images/223898944941.png` - 블로그 ID 기반 이미지 (삼겹살 파티)
 - `index.html` - 업데이트된 메인 페이지
+
+**🆔 파일명 규칙**: 블로그 URL의 ID와 정확히 일치
+- `blog.naver.com/chungdam311/223928716039` → `223928716039.png`
 
 ## 🔧 수동 실행 방법
 
@@ -115,11 +118,11 @@ $ npm run update
 
 📸 블로그 포스트 이미지 촬영 중...
    📷 청담재활 2분기 생신 잔치!! 스크린샷 촬영...
-   ✅ blog-post-1-auto.png 생성 완료
+   ✅ 223920577668.png 생성 완료
    📷 청담재활 삼겹살 파티~~~ 스크린샷 촬영...
-   ✅ blog-post-2-auto.png 생성 완료
+   ✅ 223898944941.png 생성 완료
    📷 청담재활주간보호센터 어버이날 행사~~~!! 스크린샷 촬영...
-   ✅ blog-post-3-auto.png 생성 완료
+   ✅ 223865345360.png 생성 완료
 
 📝 index.html 파일 업데이트 중...
 ✅ index.html 업데이트 완료
@@ -127,9 +130,9 @@ $ npm run update
 🔄 Git 커밋 준비 중...
 📋 변경된 파일들:
 M  index.html
-A  images/blog-post-1-auto.png
-A  images/blog-post-2-auto.png  
-A  images/blog-post-3-auto.png
+A  images/223920577668.png
+A  images/223898944941.png  
+A  images/223865345360.png
 
 🚀 Git 커밋을 위해 다음 명령어를 실행하세요:
    git add .
