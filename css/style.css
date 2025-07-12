@@ -2113,3 +2113,13 @@ html {
     opacity: 1;
 }
 
+.naver-map {
+  height: 400px !important;
+  background-image: url('images/123456.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
