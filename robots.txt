@@ -18,3 +18,8 @@ Sitemap: https://mamanim123.github.io/chungdam/sitemap.xml
 
 # 크롤링 주기 (선택사항)
 Crawl-delay: 1
+
+User-agent: *
+Disallow: /
+User-agent: Yeti
+Allow: /
