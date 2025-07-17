@@ -5,21 +5,14 @@ Allow: /
 User-agent: Yeti
 Allow: /
 
-# 구글 검색로봇
-User-agent: Googlebot
-Allow: /
 
 # 다음 검색로봇
 User-agent: Daumoa
 Allow: /
 
 # 사이트맵 위치
-Sitemap: https://mamanim123.github.io/chungdam/sitemap.xml
+Sitemap: https://mamanim123.github.io/sitemap.xml
 
 # 크롤링 주기 (선택사항)
 Crawl-delay: 1
 
-User-agent: *
-Disallow: /
-User-agent: Yeti
-Allow: /
